@@ -3,6 +3,8 @@
 ## version info ##
 
 Ver.0.0.1: Add each search algorithm classes
+Ver.0.0.2: Add depth first search algorithm
+
 
 ## overview ##
 
