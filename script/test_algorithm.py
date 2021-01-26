@@ -1,4 +1,3 @@
-import math
 import sys
 
 # explict "import" method
@@ -13,11 +12,21 @@ from src import *
 if __name__ == '__main__':
 
     # create graph for search 
-    graph = CreateGraph()
+    graph        = CreateGraph()
+    search_graph = graph.get_graph()
+    print(search_graph)
 
     # create instances of each search method
-    dfs_method  = DepthFirstSearch()
-    bfs_method  = BreadthFirstSearch()
-    os_method   = OptimalSearch()
-    befs_method = BestFirstSearch()
-    assa_method = AStarSearchAlgorithm()
+    # Depth First Search
+    dfs_method = DepthFirstSearch(search_graph)
+    dfs_method.exploration()
+    print(dfs_method.get_closed_list())
+    
+    # Breadth First Search
+    # bfs_method  = BreadthFirstSearch()
+    # bfs_method.exploration()
+    # print(bfs_method.get_closed_list) 
+    
+    # os_method   = OptimalSearch()
+    # befs_method = BestFirstSearch()
+    # assa_method = AStarSearchAlgorithm()
