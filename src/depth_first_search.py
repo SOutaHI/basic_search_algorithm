@@ -1,6 +1,10 @@
 import math
 
 class DepthFirstSearch:
-    print("test")
+
+    def __init__(self):
+
+        print("depth first search start")
 
 if __name__ == '__main__':
+    pass

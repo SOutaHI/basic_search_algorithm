@@ -1,9 +1,9 @@
 import math
 
-class OptimalSearch:
+class CreateGraph:
 
     def __init__(self):
-        print("optimal search start")
+        print("create grasph start")
 
 if __name__ == '__main__':
     pass
