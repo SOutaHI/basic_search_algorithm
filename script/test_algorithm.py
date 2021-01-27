@@ -20,12 +20,19 @@ if __name__ == '__main__':
     # Depth First Search
     dfs_method = DepthFirstSearch(search_graph)
     dfs_method.exploration()
-    print(dfs_method.get_closed_list())
+    print(type(dfs_method.get_closed_list()))
+
+    print("\n")
+    print("\n")
     
+    graph        = CreateGraph()
+    search_graph = graph.get_graph()
+    print(search_graph)
+
     # Breadth First Search
-    # bfs_method  = BreadthFirstSearch()
-    # bfs_method.exploration()
-    # print(bfs_method.get_closed_list) 
+    bfs_method  = BreadthFirstSearch(search_graph)
+    bfs_method.exploration()
+    print(bfs_method.get_closed_list())
     
     # os_method   = OptimalSearch()
     # befs_method = BestFirstSearch()
